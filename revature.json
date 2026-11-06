@@ -1,0 +1,45 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/StackImplementationExerciseTest.java",
+      "testCases": [
+        {
+          "methodName": "createStackTest",
+          "label": "Verify a new stack is created successfully",
+          "description": "Checks that createNewStack() returns a non-null Deque instance."
+        },
+        {
+          "methodName": "getSizeTest1",
+          "label": "Verify a new stack starts with size 0",
+          "description": "Checks that getSize() returns 0 for a newly created stack."
+        },
+        {
+          "methodName": "getSizeTest2",
+          "label": "Verify adding one item updates stack size to 1",
+          "description": "Adds one item with addToTopOfStack() and verifies getSize() returns 1."
+        },
+        {
+          "methodName": "addToTopOfStackTest1",
+          "label": "Verify adding two items updates stack size to 2",
+          "description": "Adds two items to the stack and verifies that getSize() returns 2."
+        },
+        {
+          "methodName": "removeFromTopOfStackTest1",
+          "label": "Verify removing top item follows LIFO and reduces size",
+          "description": "Adds three items, removes one with removeFromTopOfStack(), checks returned value is the most recent item, and size becomes 2."
+        },
+        {
+          "methodName": "removeFromTopOfStackTest2",
+          "label": "Verify two removals follow LIFO order and size updates",
+          "description": "Adds three items, removes two, verifies items removed in LIFO order, and the remaining size is 1."
+        },
+        {
+          "methodName": "getTopOfStackWithoutRemovingTest1",
+          "label": "Verify peek returns top item without altering size",
+          "description": "Adds three items, calls getTopOfStackWithoutRemoving(), verifies returned value is the most recent item, and size remains unchanged."
+        }
+      ]
+    }
+  ]
+}
